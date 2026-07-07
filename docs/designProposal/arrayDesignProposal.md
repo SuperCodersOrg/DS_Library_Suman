@@ -33,7 +33,7 @@ This proposal describes the design & structure of the Dynamic Array. In this pro
 
 **Parameter:**
 
-- There is no parameter, in this function we decrease the current size of the array and next time when needed a new element is overwrite in this memory space block. As after decresing the size of the array we lose the access to that address or memory block.
+- There is no parameter, in this function we decrease the current size of the array and next time when needed a new element is overwritten in this memory space block. As after decresing the size of the array we lose the access to that address or memory block.
 
 **Return Type:**
 
@@ -45,7 +45,7 @@ This proposal describes the design & structure of the Dynamic Array. In this pro
 
 - In this function we insert the element at the given index.
 - First all the later elements from that index are shifted to right and then we insert the new element at the given index.
-- If the array is full then we first allocate the bigger size array dynamically then copying the existing elements in it and then all the later elements from the given index are shifted to right and then we insert the new element at the given index.
+- If the array is full then we first allocate the bigger size array dynamically then copying the existing elements in it and then all the subsequent elements from the given index are shifted to right and then we insert the new element at the given index.
 - If the index is equal to the size of the array then we call the `push_back()` function and passed the element as a parameter to it.
 
 **Parameter:**
@@ -63,7 +63,7 @@ This proposal describes the design & structure of the Dynamic Array. In this pro
 - In this function the element is removed from the given index.
 - In this function we left shift all the later elements after the given index.
 - If the index is greater than the size of the array then we throw an exception.
-- If the index is equal to the size of the then we call `pop_back()`.
+- If the index is equal to one less than of size of the array (size-1) then we call `pop_back()`.
 
 **Parameter:**
 
@@ -79,7 +79,7 @@ This proposal describes the design & structure of the Dynamic Array. In this pro
 
 - In this function we return the value stored at the given index.
 - In this function we fetch the value from the array by indexing which means adding the index to the base address or base pointer.
-- If the index is larger than the size of the array then we throw an exception.
+- If the index is equal to or larger than the size of the array then we throw an exception.
 
 **Parameter:**
 
@@ -95,7 +95,7 @@ This proposal describes the design & structure of the Dynamic Array. In this pro
 
 - In this function we return the true or false, whether the array is empty is empty or not.
 - It can be used before deleting any element from the array so that we can prevent the program from the exceptions.
-- In this function we check the size of the array, if the size of the array is `0` then we return false else retunr true.
+- In this function we check the size of the array, if the size of the array is `0` then we return true else retunr false.
 
 **Parameter:**
 
@@ -134,14 +134,17 @@ This proposal describes the design & structure of the Dynamic Array. In this pro
 ```cpp
 template<typename T>
 class DynamicArray{
-    T* ptr;
+    T* arr;
     int size;
     int capacity;
 public:
+    ~DynamicArray();
+    DynamicArray(const DynamicArray& other);
+    DynamicArray& operator=(const DynamicArray& other);
     DynamicArray(){
         size=0;
         capacity=1;
-        ptr=(T*)malloc(sizeof(T)*capacity);
+        arr=(T*)malloc(sizeof(T)*capacity);
     }
     void push_back(T ele);
     void pop_back();
@@ -180,6 +183,7 @@ public:
 
   >This calculation only represents the size of the object's data members.
 - The internal representation defines how the Dynamic Array is implemented and managed in memory.
+- The memory layout diagram of dynamic array object defines that the object itself resides on the stack, while the elements are stored in a dynamically allocated contiguous memory block on the heap. The array pointer (arr) stores the base address of this memory block.
 - ![Dynamic Array Memory Layout](../Images/ArrayMemoryLayout.jpeg)
 - ![Dynamic Array Memory Layout](../Images/ArrayMemoryDiagram.png)
 
