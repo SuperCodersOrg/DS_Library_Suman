@@ -181,7 +181,7 @@ public:
   >This calculation only represents the size of the object's data members.
 - The internal representation defines how the Dynamic Array is implemented and managed in memory.
 - ![Dynamic Array Memory Layout](../Images/ArrayMemoryLayout.jpeg)
-- ![Dynamic Array Memory Layout](../images/ArrayMemoryDiagram.png)
+- ![Dynamic Array Memory Layout](../Images/ArrayMemoryDiagram.png)
 
 - The Dynamic Array is implemented using **Object-Oriented Programming (OOP)** principles.
 
