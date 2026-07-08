@@ -1,3 +1,7 @@
+**Project Title:** Building a Data Structures Library and Redis Lite  
+**Student Name:** Suman Mondal
+**Date:** 06 July 2026 
+
 # Dynamic Array Design Proposal
 
 This proposal describes the design & structure of the Dynamic Array. In this proposal there are total four sections. A Dynamic Array is a growable sequence container.
