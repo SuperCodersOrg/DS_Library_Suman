@@ -296,9 +296,9 @@ The destructor destroys all constructed elements and releases the dynamically al
 
 The copy constructor creates a new Dynamic Array as a copy of an existing one. It performs a **deep copy**, which means it allocates a separate memory block and copies each element into it.
 
-### Copy Assignment Operator
+### Copy Assignment Operator Overloading
 
-The copy assignment operator copies one existing Dynamic Array into another existing object. It releases the old memory safely, handles self-assignment, allocates new memory, and copies the elements. This prevents shallow copying, double deletion, dangling pointers, and memory leaks.
+The copy assignment operator overloading copies one existing Dynamic Array into another existing object. It releases the old memory safely, handles self-assignment, allocates new memory, and copies the elements. This prevents shallow copying, double deletion, dangling pointers, and memory leaks.
 
 ---
 

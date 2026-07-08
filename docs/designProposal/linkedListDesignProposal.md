@@ -375,7 +375,7 @@ Initially, `head` is set to `nullptr`, which means the list is empty. When a new
 During deletion, the target node is disconnected from the list, its stored object is destroyed correctly, and its memory is released. Unlike a Dynamic Array, the linked list does not have a capacity variable and does not require a shrinking strategy. Deleting a node directly frees that node's memory.
 
 ## Memory Layout
-![Dynamic Array Memory Layout](../Images/LinkedListMemoryLayout.jpeg)
+![Linked List Memory Layout](../Images/LinkedListMemoryLayout.jpeg)
 
 ## Template Concept and Generic Type
 
@@ -420,9 +420,9 @@ The destructor traverses the entire list, destroys each node, and releases its m
 
 The copy constructor performs a **deep copy** of the source list. Instead of copying node addresses, it creates new nodes for every element. As a result, both linked lists own independent memory.
 
-### Copy Assignment Operator
+### Copy Assignment Operator Overloading
 
-The copy assignment operator first releases the memory currently owned by the destination list. It then performs a deep copy of the source list. It should also handle self-assignment safely. This prevents shallow copying, dangling pointers, memory leaks, and double deletion.
+The copy assignment operator overloading first releases the memory currently owned by the destination list. It then performs a deep copy of the source list. It should also handle self-assignment safely. This prevents shallow copying, dangling pointers, memory leaks, and double deletion.
 
 ---
 
