@@ -31,7 +31,7 @@ The initial state of the DynamicArray was decided as:
 ```cpp
 size = 0;
 capacity = 1;
-arr = new T[capacity];
+arr = (T*)malloc(sizeof(T) * capacity);
 ```
 
 The array automatically increases its capacity whenever it becomes full.
