@@ -1,4 +1,4 @@
-#include "dynamicArray.h"
+#include "../include/dynamicArray.h"
 using namespace std;
 
 template<typename T>

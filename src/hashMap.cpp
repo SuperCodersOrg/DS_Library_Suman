@@ -1,4 +1,4 @@
-#include "hashMap.h"
+#include "../include/hashMap.h"
 using namespace std;
 
 template<typename K, typename V>

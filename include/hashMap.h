@@ -66,6 +66,6 @@ public:
     void printBuckets();
 };
 
-#include "hashMap.cpp"
+#include "../src/hashMap.cpp"
 
 #endif

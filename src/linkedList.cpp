@@ -1,4 +1,4 @@
-#include "linkedList.h"
+#include "../include/linkedList.h"
 using namespace std;
 
 template<typename T>

@@ -1,5 +1,4 @@
-**Project Title:** Building a Data Structures Library and Redis Lite  
-**Student Name:** Suman Mondal  
+**Project Title:** Building a Data Structures Library and Redis Lite   
 **Date:** 07 July 2026
 
 # Linked List Design Proposal

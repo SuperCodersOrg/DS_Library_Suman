@@ -35,6 +35,6 @@ public:
     int generateHash(const T& obj);
 };
 
-#include "hashFunction.cpp"
+#include "../src/hashFunction.cpp"
 
 #endif

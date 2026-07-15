@@ -35,5 +35,5 @@ public:
     void remove(T& val);
 };
 
-#include "linkedList.cpp"
+#include "../src/linkedList.cpp"
 #endif

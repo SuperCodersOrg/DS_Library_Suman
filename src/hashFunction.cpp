@@ -1,4 +1,4 @@
-#include "HashFunction.h"
+#include "../include/hashFunction.h"
 #include <cstring>
 #include <type_traits>
 #include <utility>

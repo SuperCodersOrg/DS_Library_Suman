@@ -30,5 +30,5 @@ public:
     const T& operator[](int index)const;
 };
 
-#include "dynamicArray.cpp"
+#include "../src/dynamicArray.cpp"
 #endif
