@@ -1,0 +1,5 @@
+if(EXISTS "/mnt/c/Users/suman/Desktop/DS_Library/build/RedisLiteTesting[1]_tests.cmake")
+  include("/mnt/c/Users/suman/Desktop/DS_Library/build/RedisLiteTesting[1]_tests.cmake")
+else()
+  add_test(RedisLiteTesting_NOT_BUILT RedisLiteTesting_NOT_BUILT)
+endif()

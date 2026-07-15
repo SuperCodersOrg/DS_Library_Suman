@@ -160,4 +160,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/DynamicArrayTesting.dir/DependInfo.cmake"
   "CMakeFiles/LinkedListTesting.dir/DependInfo.cmake"
+  "CMakeFiles/HashMapTesting.dir/DependInfo.cmake"
+  "CMakeFiles/RedisLiteTesting.dir/DependInfo.cmake"
   )

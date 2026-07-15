@@ -1,0 +1,5 @@
+if(EXISTS "/mnt/c/Users/suman/Desktop/DS_Library/build/HashMapTesting[1]_tests.cmake")
+  include("/mnt/c/Users/suman/Desktop/DS_Library/build/HashMapTesting[1]_tests.cmake")
+else()
+  add_test(HashMapTesting_NOT_BUILT HashMapTesting_NOT_BUILT)
+endif()

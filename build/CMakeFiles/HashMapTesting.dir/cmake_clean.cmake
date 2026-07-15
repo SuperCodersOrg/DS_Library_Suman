@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/HashMapTesting.dir/link.d"
+  "CMakeFiles/HashMapTesting.dir/src/hashFunction.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/src/hashFunction.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapAssignment.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapAssignment.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapBucketIndex.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapBucketIndex.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapClear.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapClear.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapConstructor.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapConstructor.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapCopyConstructor.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapCopyConstructor.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapDestructor.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapDestructor.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapExists.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapExists.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGet.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGet.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetLoadFactor.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetLoadFactor.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetSize.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetSize.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapInsert.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapInsert.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapPrintBuckets.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapPrintBuckets.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRehash.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRehash.cpp.o.d"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRemove.cpp.o"
+  "CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRemove.cpp.o.d"
+  "HashMapTesting"
+  "HashMapTesting.pdb"
+  "HashMapTesting[1]_tests.cmake"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/HashMapTesting.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

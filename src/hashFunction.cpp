@@ -1,31 +1,8 @@
 #include "../include/hashFunction.h"
 #include <cstring>
+#include<concepts>
 #include <type_traits>
 #include <utility>
-
-// Helper function: used when K has hashCode()
-template<typename K>
-int generateHashImpl(const K& obj, std::true_type)
-{
-    return obj.hashCode();
-}
-
-// Helper function: used when K does not have hashCode()
-template<typename K>
-int generateHashImpl(const K& obj, std::false_type)
-{
-    const unsigned char* bytes =
-        reinterpret_cast<const unsigned char*>(&obj);
-
-    int hash = 0;
-
-    for (size_t i = 0; i < sizeof(K); ++i)
-    {
-        hash = hash * 31 + bytes[i];
-    }
-
-    return hash;
-}
 
 int HashFunction::generateHash(int key) {
     return key;
@@ -69,8 +46,4 @@ int HashFunction::generateHash(short key) {
     return static_cast<int>(key);
 }
 
-template<typename K>
-int HashFunction::generateHash(const K& obj)
-{
-    return generateHashImpl(obj, HasHashCode<K>{});
-}
+

@@ -3,25 +3,9 @@
 
 #include <string>
 #include <cstdint>
-#include <type_traits>
-#include <utility>
 
-// Checks whether T has:
-// int hashCode() const;
-template<typename, typename = void>
-struct HasHashCode : std::false_type {};
-
-template<typename T>
-struct HasHashCode<
-    T,
-    std::void_t<
-        decltype(std::declval<const T&>().hashCode())
-    >
-> : std::is_convertible<
-        decltype(std::declval<const T&>().hashCode()),
-        int> {};
-
-class HashFunction {
+class HashFunction
+{
 public:
     int generateHash(int key);
     int generateHash(char key);
@@ -31,10 +15,25 @@ public:
     int generateHash(double key);
     int generateHash(long key);
     int generateHash(short key);
-    template<typename T>
-    int generateHash(const T& obj);
+    template<typename K>
+    int generateHash(const K& obj)
+    {
+        if constexpr (requires(const K& value){
+            { value.hashCode() } -> std::convertible_to<int>;}){
+            return obj.hashCode();
+        }else{
+            static_assert(std::is_trivially_copyable_v<K>,"Type must either provide hashCode() or be trivially copyable.");
+            const unsigned char* bytes =reinterpret_cast<const unsigned char*>(&obj);
+
+            int hash = 0;
+            for (size_t i = 0; i < sizeof(K); ++i){
+                hash = hash * 31 + bytes[i];
+            }
+            return hash;
+        }
+    }
 };
 
-#include "../src/hashFunction.cpp"
+
 
 #endif

@@ -165,6 +165,32 @@ LinkedListTesting/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedListTesting.dir/build.make CMakeFiles/LinkedListTesting.dir/build
 .PHONY : LinkedListTesting/fast
 
+#=============================================================================
+# Target rules for targets named HashMapTesting
+
+# Build rule for target.
+HashMapTesting: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HashMapTesting
+.PHONY : HashMapTesting
+
+# fast build rule for target.
+HashMapTesting/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/build
+.PHONY : HashMapTesting/fast
+
+#=============================================================================
+# Target rules for targets named RedisLiteTesting
+
+# Build rule for target.
+RedisLiteTesting: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RedisLiteTesting
+.PHONY : RedisLiteTesting
+
+# fast build rule for target.
+RedisLiteTesting/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/build
+.PHONY : RedisLiteTesting/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -188,6 +214,60 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/hashFunction.o: src/hashFunction.cpp.o
+.PHONY : src/hashFunction.o
+
+# target to build an object file
+src/hashFunction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hashFunction.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/src/hashFunction.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/src/hashFunction.cpp.o
+.PHONY : src/hashFunction.cpp.o
+
+src/hashFunction.i: src/hashFunction.cpp.i
+.PHONY : src/hashFunction.i
+
+# target to preprocess a source file
+src/hashFunction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hashFunction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/src/hashFunction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/src/hashFunction.cpp.i
+.PHONY : src/hashFunction.cpp.i
+
+src/hashFunction.s: src/hashFunction.cpp.s
+.PHONY : src/hashFunction.s
+
+# target to generate assembly for a file
+src/hashFunction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hashFunction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/src/hashFunction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/src/hashFunction.cpp.s
+.PHONY : src/hashFunction.cpp.s
+
+src/redisLite.o: src/redisLite.cpp.o
+.PHONY : src/redisLite.o
+
+# target to build an object file
+src/redisLite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/src/redisLite.cpp.o
+.PHONY : src/redisLite.cpp.o
+
+src/redisLite.i: src/redisLite.cpp.i
+.PHONY : src/redisLite.i
+
+# target to preprocess a source file
+src/redisLite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/src/redisLite.cpp.i
+.PHONY : src/redisLite.cpp.i
+
+src/redisLite.s: src/redisLite.cpp.s
+.PHONY : src/redisLite.s
+
+# target to generate assembly for a file
+src/redisLite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/src/redisLite.cpp.s
+.PHONY : src/redisLite.cpp.s
 
 testing/DynamicArrayTesting/DynamicArrayBracket.o: testing/DynamicArrayTesting/DynamicArrayBracket.cpp.o
 .PHONY : testing/DynamicArrayTesting/DynamicArrayBracket.o
@@ -548,6 +628,342 @@ testing/DynamicArrayTesting/DynamicArrayPushBack.s: testing/DynamicArrayTesting/
 testing/DynamicArrayTesting/DynamicArrayPushBack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrayTesting.dir/build.make CMakeFiles/DynamicArrayTesting.dir/testing/DynamicArrayTesting/DynamicArrayPushBack.cpp.s
 .PHONY : testing/DynamicArrayTesting/DynamicArrayPushBack.cpp.s
+
+testing/HashMapTesting/HashMapAssignment.o: testing/HashMapTesting/HashMapAssignment.cpp.o
+.PHONY : testing/HashMapTesting/HashMapAssignment.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapAssignment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapAssignment.cpp.o
+.PHONY : testing/HashMapTesting/HashMapAssignment.cpp.o
+
+testing/HashMapTesting/HashMapAssignment.i: testing/HashMapTesting/HashMapAssignment.cpp.i
+.PHONY : testing/HashMapTesting/HashMapAssignment.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapAssignment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapAssignment.cpp.i
+.PHONY : testing/HashMapTesting/HashMapAssignment.cpp.i
+
+testing/HashMapTesting/HashMapAssignment.s: testing/HashMapTesting/HashMapAssignment.cpp.s
+.PHONY : testing/HashMapTesting/HashMapAssignment.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapAssignment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapAssignment.cpp.s
+.PHONY : testing/HashMapTesting/HashMapAssignment.cpp.s
+
+testing/HashMapTesting/HashMapBucketIndex.o: testing/HashMapTesting/HashMapBucketIndex.cpp.o
+.PHONY : testing/HashMapTesting/HashMapBucketIndex.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapBucketIndex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapBucketIndex.cpp.o
+.PHONY : testing/HashMapTesting/HashMapBucketIndex.cpp.o
+
+testing/HashMapTesting/HashMapBucketIndex.i: testing/HashMapTesting/HashMapBucketIndex.cpp.i
+.PHONY : testing/HashMapTesting/HashMapBucketIndex.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapBucketIndex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapBucketIndex.cpp.i
+.PHONY : testing/HashMapTesting/HashMapBucketIndex.cpp.i
+
+testing/HashMapTesting/HashMapBucketIndex.s: testing/HashMapTesting/HashMapBucketIndex.cpp.s
+.PHONY : testing/HashMapTesting/HashMapBucketIndex.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapBucketIndex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapBucketIndex.cpp.s
+.PHONY : testing/HashMapTesting/HashMapBucketIndex.cpp.s
+
+testing/HashMapTesting/HashMapClear.o: testing/HashMapTesting/HashMapClear.cpp.o
+.PHONY : testing/HashMapTesting/HashMapClear.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapClear.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapClear.cpp.o
+.PHONY : testing/HashMapTesting/HashMapClear.cpp.o
+
+testing/HashMapTesting/HashMapClear.i: testing/HashMapTesting/HashMapClear.cpp.i
+.PHONY : testing/HashMapTesting/HashMapClear.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapClear.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapClear.cpp.i
+.PHONY : testing/HashMapTesting/HashMapClear.cpp.i
+
+testing/HashMapTesting/HashMapClear.s: testing/HashMapTesting/HashMapClear.cpp.s
+.PHONY : testing/HashMapTesting/HashMapClear.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapClear.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapClear.cpp.s
+.PHONY : testing/HashMapTesting/HashMapClear.cpp.s
+
+testing/HashMapTesting/HashMapConstructor.o: testing/HashMapTesting/HashMapConstructor.cpp.o
+.PHONY : testing/HashMapTesting/HashMapConstructor.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapConstructor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapConstructor.cpp.o
+.PHONY : testing/HashMapTesting/HashMapConstructor.cpp.o
+
+testing/HashMapTesting/HashMapConstructor.i: testing/HashMapTesting/HashMapConstructor.cpp.i
+.PHONY : testing/HashMapTesting/HashMapConstructor.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapConstructor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapConstructor.cpp.i
+.PHONY : testing/HashMapTesting/HashMapConstructor.cpp.i
+
+testing/HashMapTesting/HashMapConstructor.s: testing/HashMapTesting/HashMapConstructor.cpp.s
+.PHONY : testing/HashMapTesting/HashMapConstructor.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapConstructor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapConstructor.cpp.s
+.PHONY : testing/HashMapTesting/HashMapConstructor.cpp.s
+
+testing/HashMapTesting/HashMapCopyConstructor.o: testing/HashMapTesting/HashMapCopyConstructor.cpp.o
+.PHONY : testing/HashMapTesting/HashMapCopyConstructor.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapCopyConstructor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapCopyConstructor.cpp.o
+.PHONY : testing/HashMapTesting/HashMapCopyConstructor.cpp.o
+
+testing/HashMapTesting/HashMapCopyConstructor.i: testing/HashMapTesting/HashMapCopyConstructor.cpp.i
+.PHONY : testing/HashMapTesting/HashMapCopyConstructor.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapCopyConstructor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapCopyConstructor.cpp.i
+.PHONY : testing/HashMapTesting/HashMapCopyConstructor.cpp.i
+
+testing/HashMapTesting/HashMapCopyConstructor.s: testing/HashMapTesting/HashMapCopyConstructor.cpp.s
+.PHONY : testing/HashMapTesting/HashMapCopyConstructor.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapCopyConstructor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapCopyConstructor.cpp.s
+.PHONY : testing/HashMapTesting/HashMapCopyConstructor.cpp.s
+
+testing/HashMapTesting/HashMapDestructor.o: testing/HashMapTesting/HashMapDestructor.cpp.o
+.PHONY : testing/HashMapTesting/HashMapDestructor.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapDestructor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapDestructor.cpp.o
+.PHONY : testing/HashMapTesting/HashMapDestructor.cpp.o
+
+testing/HashMapTesting/HashMapDestructor.i: testing/HashMapTesting/HashMapDestructor.cpp.i
+.PHONY : testing/HashMapTesting/HashMapDestructor.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapDestructor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapDestructor.cpp.i
+.PHONY : testing/HashMapTesting/HashMapDestructor.cpp.i
+
+testing/HashMapTesting/HashMapDestructor.s: testing/HashMapTesting/HashMapDestructor.cpp.s
+.PHONY : testing/HashMapTesting/HashMapDestructor.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapDestructor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapDestructor.cpp.s
+.PHONY : testing/HashMapTesting/HashMapDestructor.cpp.s
+
+testing/HashMapTesting/HashMapExists.o: testing/HashMapTesting/HashMapExists.cpp.o
+.PHONY : testing/HashMapTesting/HashMapExists.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapExists.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapExists.cpp.o
+.PHONY : testing/HashMapTesting/HashMapExists.cpp.o
+
+testing/HashMapTesting/HashMapExists.i: testing/HashMapTesting/HashMapExists.cpp.i
+.PHONY : testing/HashMapTesting/HashMapExists.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapExists.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapExists.cpp.i
+.PHONY : testing/HashMapTesting/HashMapExists.cpp.i
+
+testing/HashMapTesting/HashMapExists.s: testing/HashMapTesting/HashMapExists.cpp.s
+.PHONY : testing/HashMapTesting/HashMapExists.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapExists.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapExists.cpp.s
+.PHONY : testing/HashMapTesting/HashMapExists.cpp.s
+
+testing/HashMapTesting/HashMapGet.o: testing/HashMapTesting/HashMapGet.cpp.o
+.PHONY : testing/HashMapTesting/HashMapGet.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapGet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGet.cpp.o
+.PHONY : testing/HashMapTesting/HashMapGet.cpp.o
+
+testing/HashMapTesting/HashMapGet.i: testing/HashMapTesting/HashMapGet.cpp.i
+.PHONY : testing/HashMapTesting/HashMapGet.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapGet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGet.cpp.i
+.PHONY : testing/HashMapTesting/HashMapGet.cpp.i
+
+testing/HashMapTesting/HashMapGet.s: testing/HashMapTesting/HashMapGet.cpp.s
+.PHONY : testing/HashMapTesting/HashMapGet.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapGet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGet.cpp.s
+.PHONY : testing/HashMapTesting/HashMapGet.cpp.s
+
+testing/HashMapTesting/HashMapGetLoadFactor.o: testing/HashMapTesting/HashMapGetLoadFactor.cpp.o
+.PHONY : testing/HashMapTesting/HashMapGetLoadFactor.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapGetLoadFactor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetLoadFactor.cpp.o
+.PHONY : testing/HashMapTesting/HashMapGetLoadFactor.cpp.o
+
+testing/HashMapTesting/HashMapGetLoadFactor.i: testing/HashMapTesting/HashMapGetLoadFactor.cpp.i
+.PHONY : testing/HashMapTesting/HashMapGetLoadFactor.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapGetLoadFactor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetLoadFactor.cpp.i
+.PHONY : testing/HashMapTesting/HashMapGetLoadFactor.cpp.i
+
+testing/HashMapTesting/HashMapGetLoadFactor.s: testing/HashMapTesting/HashMapGetLoadFactor.cpp.s
+.PHONY : testing/HashMapTesting/HashMapGetLoadFactor.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapGetLoadFactor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetLoadFactor.cpp.s
+.PHONY : testing/HashMapTesting/HashMapGetLoadFactor.cpp.s
+
+testing/HashMapTesting/HashMapGetSize.o: testing/HashMapTesting/HashMapGetSize.cpp.o
+.PHONY : testing/HashMapTesting/HashMapGetSize.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapGetSize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetSize.cpp.o
+.PHONY : testing/HashMapTesting/HashMapGetSize.cpp.o
+
+testing/HashMapTesting/HashMapGetSize.i: testing/HashMapTesting/HashMapGetSize.cpp.i
+.PHONY : testing/HashMapTesting/HashMapGetSize.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapGetSize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetSize.cpp.i
+.PHONY : testing/HashMapTesting/HashMapGetSize.cpp.i
+
+testing/HashMapTesting/HashMapGetSize.s: testing/HashMapTesting/HashMapGetSize.cpp.s
+.PHONY : testing/HashMapTesting/HashMapGetSize.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapGetSize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapGetSize.cpp.s
+.PHONY : testing/HashMapTesting/HashMapGetSize.cpp.s
+
+testing/HashMapTesting/HashMapInsert.o: testing/HashMapTesting/HashMapInsert.cpp.o
+.PHONY : testing/HashMapTesting/HashMapInsert.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapInsert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapInsert.cpp.o
+.PHONY : testing/HashMapTesting/HashMapInsert.cpp.o
+
+testing/HashMapTesting/HashMapInsert.i: testing/HashMapTesting/HashMapInsert.cpp.i
+.PHONY : testing/HashMapTesting/HashMapInsert.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapInsert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapInsert.cpp.i
+.PHONY : testing/HashMapTesting/HashMapInsert.cpp.i
+
+testing/HashMapTesting/HashMapInsert.s: testing/HashMapTesting/HashMapInsert.cpp.s
+.PHONY : testing/HashMapTesting/HashMapInsert.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapInsert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapInsert.cpp.s
+.PHONY : testing/HashMapTesting/HashMapInsert.cpp.s
+
+testing/HashMapTesting/HashMapPrintBuckets.o: testing/HashMapTesting/HashMapPrintBuckets.cpp.o
+.PHONY : testing/HashMapTesting/HashMapPrintBuckets.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapPrintBuckets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapPrintBuckets.cpp.o
+.PHONY : testing/HashMapTesting/HashMapPrintBuckets.cpp.o
+
+testing/HashMapTesting/HashMapPrintBuckets.i: testing/HashMapTesting/HashMapPrintBuckets.cpp.i
+.PHONY : testing/HashMapTesting/HashMapPrintBuckets.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapPrintBuckets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapPrintBuckets.cpp.i
+.PHONY : testing/HashMapTesting/HashMapPrintBuckets.cpp.i
+
+testing/HashMapTesting/HashMapPrintBuckets.s: testing/HashMapTesting/HashMapPrintBuckets.cpp.s
+.PHONY : testing/HashMapTesting/HashMapPrintBuckets.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapPrintBuckets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapPrintBuckets.cpp.s
+.PHONY : testing/HashMapTesting/HashMapPrintBuckets.cpp.s
+
+testing/HashMapTesting/HashMapRehash.o: testing/HashMapTesting/HashMapRehash.cpp.o
+.PHONY : testing/HashMapTesting/HashMapRehash.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapRehash.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRehash.cpp.o
+.PHONY : testing/HashMapTesting/HashMapRehash.cpp.o
+
+testing/HashMapTesting/HashMapRehash.i: testing/HashMapTesting/HashMapRehash.cpp.i
+.PHONY : testing/HashMapTesting/HashMapRehash.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapRehash.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRehash.cpp.i
+.PHONY : testing/HashMapTesting/HashMapRehash.cpp.i
+
+testing/HashMapTesting/HashMapRehash.s: testing/HashMapTesting/HashMapRehash.cpp.s
+.PHONY : testing/HashMapTesting/HashMapRehash.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapRehash.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRehash.cpp.s
+.PHONY : testing/HashMapTesting/HashMapRehash.cpp.s
+
+testing/HashMapTesting/HashMapRemove.o: testing/HashMapTesting/HashMapRemove.cpp.o
+.PHONY : testing/HashMapTesting/HashMapRemove.o
+
+# target to build an object file
+testing/HashMapTesting/HashMapRemove.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRemove.cpp.o
+.PHONY : testing/HashMapTesting/HashMapRemove.cpp.o
+
+testing/HashMapTesting/HashMapRemove.i: testing/HashMapTesting/HashMapRemove.cpp.i
+.PHONY : testing/HashMapTesting/HashMapRemove.i
+
+# target to preprocess a source file
+testing/HashMapTesting/HashMapRemove.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRemove.cpp.i
+.PHONY : testing/HashMapTesting/HashMapRemove.cpp.i
+
+testing/HashMapTesting/HashMapRemove.s: testing/HashMapTesting/HashMapRemove.cpp.s
+.PHONY : testing/HashMapTesting/HashMapRemove.s
+
+# target to generate assembly for a file
+testing/HashMapTesting/HashMapRemove.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashMapTesting.dir/build.make CMakeFiles/HashMapTesting.dir/testing/HashMapTesting/HashMapRemove.cpp.s
+.PHONY : testing/HashMapTesting/HashMapRemove.cpp.s
 
 testing/LinkedListTesting/LinkedListConstructor.o: testing/LinkedListTesting/LinkedListConstructor.cpp.o
 .PHONY : testing/LinkedListTesting/LinkedListConstructor.o
@@ -933,6 +1349,30 @@ testing/LinkedListTesting/LinkedListTraverse.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedListTesting.dir/build.make CMakeFiles/LinkedListTesting.dir/testing/LinkedListTesting/LinkedListTraverse.cpp.s
 .PHONY : testing/LinkedListTesting/LinkedListTraverse.cpp.s
 
+testing/RedisLiteTesting/RedisLiteCLI.o: testing/RedisLiteTesting/RedisLiteCLI.cpp.o
+.PHONY : testing/RedisLiteTesting/RedisLiteCLI.o
+
+# target to build an object file
+testing/RedisLiteTesting/RedisLiteCLI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/testing/RedisLiteTesting/RedisLiteCLI.cpp.o
+.PHONY : testing/RedisLiteTesting/RedisLiteCLI.cpp.o
+
+testing/RedisLiteTesting/RedisLiteCLI.i: testing/RedisLiteTesting/RedisLiteCLI.cpp.i
+.PHONY : testing/RedisLiteTesting/RedisLiteCLI.i
+
+# target to preprocess a source file
+testing/RedisLiteTesting/RedisLiteCLI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/testing/RedisLiteTesting/RedisLiteCLI.cpp.i
+.PHONY : testing/RedisLiteTesting/RedisLiteCLI.cpp.i
+
+testing/RedisLiteTesting/RedisLiteCLI.s: testing/RedisLiteTesting/RedisLiteCLI.cpp.s
+.PHONY : testing/RedisLiteTesting/RedisLiteCLI.s
+
+# target to generate assembly for a file
+testing/RedisLiteTesting/RedisLiteCLI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/testing/RedisLiteTesting/RedisLiteCLI.cpp.s
+.PHONY : testing/RedisLiteTesting/RedisLiteCLI.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -943,11 +1383,19 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... DynamicArrayTesting"
+	@echo "... HashMapTesting"
 	@echo "... LinkedListTesting"
+	@echo "... RedisLiteTesting"
 	@echo "... main"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/hashFunction.o"
+	@echo "... src/hashFunction.i"
+	@echo "... src/hashFunction.s"
+	@echo "... src/redisLite.o"
+	@echo "... src/redisLite.i"
+	@echo "... src/redisLite.s"
 	@echo "... testing/DynamicArrayTesting/DynamicArrayBracket.o"
 	@echo "... testing/DynamicArrayTesting/DynamicArrayBracket.i"
 	@echo "... testing/DynamicArrayTesting/DynamicArrayBracket.s"
@@ -993,6 +1441,48 @@ help:
 	@echo "... testing/DynamicArrayTesting/DynamicArrayPushBack.o"
 	@echo "... testing/DynamicArrayTesting/DynamicArrayPushBack.i"
 	@echo "... testing/DynamicArrayTesting/DynamicArrayPushBack.s"
+	@echo "... testing/HashMapTesting/HashMapAssignment.o"
+	@echo "... testing/HashMapTesting/HashMapAssignment.i"
+	@echo "... testing/HashMapTesting/HashMapAssignment.s"
+	@echo "... testing/HashMapTesting/HashMapBucketIndex.o"
+	@echo "... testing/HashMapTesting/HashMapBucketIndex.i"
+	@echo "... testing/HashMapTesting/HashMapBucketIndex.s"
+	@echo "... testing/HashMapTesting/HashMapClear.o"
+	@echo "... testing/HashMapTesting/HashMapClear.i"
+	@echo "... testing/HashMapTesting/HashMapClear.s"
+	@echo "... testing/HashMapTesting/HashMapConstructor.o"
+	@echo "... testing/HashMapTesting/HashMapConstructor.i"
+	@echo "... testing/HashMapTesting/HashMapConstructor.s"
+	@echo "... testing/HashMapTesting/HashMapCopyConstructor.o"
+	@echo "... testing/HashMapTesting/HashMapCopyConstructor.i"
+	@echo "... testing/HashMapTesting/HashMapCopyConstructor.s"
+	@echo "... testing/HashMapTesting/HashMapDestructor.o"
+	@echo "... testing/HashMapTesting/HashMapDestructor.i"
+	@echo "... testing/HashMapTesting/HashMapDestructor.s"
+	@echo "... testing/HashMapTesting/HashMapExists.o"
+	@echo "... testing/HashMapTesting/HashMapExists.i"
+	@echo "... testing/HashMapTesting/HashMapExists.s"
+	@echo "... testing/HashMapTesting/HashMapGet.o"
+	@echo "... testing/HashMapTesting/HashMapGet.i"
+	@echo "... testing/HashMapTesting/HashMapGet.s"
+	@echo "... testing/HashMapTesting/HashMapGetLoadFactor.o"
+	@echo "... testing/HashMapTesting/HashMapGetLoadFactor.i"
+	@echo "... testing/HashMapTesting/HashMapGetLoadFactor.s"
+	@echo "... testing/HashMapTesting/HashMapGetSize.o"
+	@echo "... testing/HashMapTesting/HashMapGetSize.i"
+	@echo "... testing/HashMapTesting/HashMapGetSize.s"
+	@echo "... testing/HashMapTesting/HashMapInsert.o"
+	@echo "... testing/HashMapTesting/HashMapInsert.i"
+	@echo "... testing/HashMapTesting/HashMapInsert.s"
+	@echo "... testing/HashMapTesting/HashMapPrintBuckets.o"
+	@echo "... testing/HashMapTesting/HashMapPrintBuckets.i"
+	@echo "... testing/HashMapTesting/HashMapPrintBuckets.s"
+	@echo "... testing/HashMapTesting/HashMapRehash.o"
+	@echo "... testing/HashMapTesting/HashMapRehash.i"
+	@echo "... testing/HashMapTesting/HashMapRehash.s"
+	@echo "... testing/HashMapTesting/HashMapRemove.o"
+	@echo "... testing/HashMapTesting/HashMapRemove.i"
+	@echo "... testing/HashMapTesting/HashMapRemove.s"
 	@echo "... testing/LinkedListTesting/LinkedListConstructor.o"
 	@echo "... testing/LinkedListTesting/LinkedListConstructor.i"
 	@echo "... testing/LinkedListTesting/LinkedListConstructor.s"
@@ -1041,6 +1531,9 @@ help:
 	@echo "... testing/LinkedListTesting/LinkedListTraverse.o"
 	@echo "... testing/LinkedListTesting/LinkedListTraverse.i"
 	@echo "... testing/LinkedListTesting/LinkedListTraverse.s"
+	@echo "... testing/RedisLiteTesting/RedisLiteCLI.o"
+	@echo "... testing/RedisLiteTesting/RedisLiteCLI.i"
+	@echo "... testing/RedisLiteTesting/RedisLiteCLI.s"
 .PHONY : help
 
 

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/mnt/c/Users/suman/Desktop/DS_Library/include -I/mnt/c/Users/suman/Desktop/DS_Library/src
 
-CXX_FLAGS = -std=c++17
+CXX_FLAGS = -std=c++20
 

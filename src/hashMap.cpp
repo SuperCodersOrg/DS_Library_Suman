@@ -1,23 +1,22 @@
-#include <iomanip>
+#include<iostream>
+#include<iomanip>
 #include "../include/hashMap.h"
 using namespace std;
 
 template<typename K, typename V>
 HashNode<K,V>::HashNode() = default;
-template<typename K ,typename V>
-HashNode<K,V>::HashNode(const K& key, const V& value){
-    this->key=key;
-    this->value=value;
-}
-template<typename K ,typename V>
-HashNode<K,V>::HashNode(const K& key):key(key), value(){}
+
 template<typename K, typename V>
-HashNode<K,V>::HashNode(const HashNode<K,V>& other){
-    this->key=other.key;
-    this->value=other.value;
-}
+HashNode<K,V>::HashNode(const K& key, const V& value): key(key), value(value){}
+
+template<typename K, typename V>
+HashNode<K,V>::HashNode(const K& key): key(key), value(){}
+
+template<typename K, typename V>
+HashNode<K,V>::HashNode(const HashNode<K,V>& other): key(other.key), value(other.value){}
 template<typename K, typename V>
 HashNode<K,V>::~HashNode()=default;
+
 template<typename K, typename V>
 bool HashNode<K,V>::operator==(const HashNode& other) const {
     return key == other.key;
@@ -167,7 +166,8 @@ void HashMap<K,V>::remove(K& key){
     HashNode<K,V>temp(key);
     list->remove(temp);
     if(list->getSize() == 0){
-        delete list;
+        list->~LinkedList<HashNode<K,V>>();
+        free(list);
         bucketArray[bucketIndex] = nullptr;
     }
     size--;

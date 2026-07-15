@@ -27,7 +27,7 @@ void RedisLite::exists(string& key){
         cout << "YES : Key '" << key << "' exists."<<endl;
     }
     else{
-        cout << "YES : Key '" << key << "' does not exists."<<endl;
+        cout << "NO : Key '" << key << "' does not exists."<<endl;
     }
     return;
 }

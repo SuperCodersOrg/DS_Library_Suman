@@ -1,0 +1,92 @@
+{
+  "tests": 16,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "RedisLiteRunTest",
+      "tests": 16,
+      "testsuite": [
+        {
+          "name": "ExitImmediately",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 31
+        },
+        {
+          "name": "SetCommandStoresKeyValuePair",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 39
+        },
+        {
+          "name": "DuplicateSetUpdatesExistingValue",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 50
+        },
+        {
+          "name": "ExistsCommandForExistingKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 61
+        },
+        {
+          "name": "ExistsCommandForMissingKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 71
+        },
+        {
+          "name": "DeleteCommandRemovesKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 80
+        },
+        {
+          "name": "CountCommandReturnsCorrectSize",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 92
+        },
+        {
+          "name": "ClearRemovesAllEntries",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 103
+        },
+        {
+          "name": "ShowDisplaysStoredEntries",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 116
+        },
+        {
+          "name": "HelpCommandDisplaysMenu",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 130
+        },
+        {
+          "name": "CommandsAreCaseInsensitive",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 141
+        },
+        {
+          "name": "IgnoresExtraSpacesBetweenTokens",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 151
+        },
+        {
+          "name": "EmptyInputShowsError",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 161
+        },
+        {
+          "name": "UnknownCommandShowsError",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 170
+        },
+        {
+          "name": "InvalidArgumentCountShowsUsage",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 179
+        },
+        {
+          "name": "ExceptionIsCaughtAndDisplayed",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/RedisLiteTesting\/RedisLiteCLI.cpp",
+          "line": 192
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "tests": 60,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "HashMapConstructorTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DefaultConstructorInitialState",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapConstructor.cpp",
+          "line": 4
+        },
+        {
+          "name": "NewlyConstructedMapIsEmpty",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapConstructor.cpp",
+          "line": 12
+        },
+        {
+          "name": "CanInsertAfterConstruction",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapConstructor.cpp",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "name": "HashMapDestructorTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "DestroyEmptyHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapDestructor.cpp",
+          "line": 4
+        },
+        {
+          "name": "DestroyPopulatedHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapDestructor.cpp",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "name": "HashMapCopyConstructorTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "CopyEmptyHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapCopyConstructor.cpp",
+          "line": 4
+        },
+        {
+          "name": "CopyPreservesData",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapCopyConstructor.cpp",
+          "line": 14
+        },
+        {
+          "name": "CopyCreatesDeepCopy",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapCopyConstructor.cpp",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "name": "HashMapCopyAssignmentTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "AssignEmptyHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapAssignment.cpp",
+          "line": 4
+        },
+        {
+          "name": "AssignPopulatedStringKeyHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapAssignment.cpp",
+          "line": 15
+        },
+        {
+          "name": "AssignmentPerformsDeepCopy",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapAssignment.cpp",
+          "line": 35
+        },
+        {
+          "name": "SelfAssignmentLeavesHashMapUnchanged",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapAssignment.cpp",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "name": "HashMapBucketIndexTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "PositiveHashCodeReturnsValidIndex",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapBucketIndex.cpp",
+          "line": 5
+        },
+        {
+          "name": "NegativeHashCodeReturnsValidIndex",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapBucketIndex.cpp",
+          "line": 16
+        },
+        {
+          "name": "LargeHashCodeWrapsAroundCapacity",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapBucketIndex.cpp",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "name": "HashMapRehashTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "RehashDoublesCapacityAndUpdatesLoadFactor",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRehash.cpp",
+          "line": 5
+        },
+        {
+          "name": "RehashPreservesExistingIntegerData",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRehash.cpp",
+          "line": 24
+        },
+        {
+          "name": "RehashPreservesStringKeys",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRehash.cpp",
+          "line": 46
+        },
+        {
+          "name": "RehashEmptyHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRehash.cpp",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "name": "HashMapInsertTest",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "InsertSingleElement",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapInsert.cpp",
+          "line": 9
+        },
+        {
+          "name": "InsertMultipleUniqueElements",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapInsert.cpp",
+          "line": 22
+        },
+        {
+          "name": "DuplicateKeyUpdatesValueWithoutIncreasingSize",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapInsert.cpp",
+          "line": 38
+        },
+        {
+          "name": "InsertStringKeyIntegerValue",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapInsert.cpp",
+          "line": 57
+        },
+        {
+          "name": "EquivalentUserDefinedKeysUsingHashCodeUpdateExistingEntry",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapInsert.cpp",
+          "line": 92
+        },
+        {
+          "name": "UserDefinedKeyWithoutHashCodeUsesFallbackHash",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapInsert.cpp",
+          "line": 126
+        },
+        {
+          "name": "EquivalentFallbackKeysUpdateExistingEntry",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapInsert.cpp",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "name": "HashMapRemoveTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "RemoveExistingKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRemove.cpp",
+          "line": 5
+        },
+        {
+          "name": "RemoveFromMultipleElements",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRemove.cpp",
+          "line": 19
+        },
+        {
+          "name": "RemoveNonExistingKeyThrows",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRemove.cpp",
+          "line": 38
+        },
+        {
+          "name": "RemoveLastElementFromBucket",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRemove.cpp",
+          "line": 47
+        },
+        {
+          "name": "RemoveUserDefinedKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapRemove.cpp",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "name": "HashMapGetTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "ReturnsValueForExistingIntegerKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGet.cpp",
+          "line": 5
+        },
+        {
+          "name": "ReturnedReferenceAllowsModification",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGet.cpp",
+          "line": 17
+        },
+        {
+          "name": "ThrowsWhenKeyDoesNotExist",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGet.cpp",
+          "line": 31
+        },
+        {
+          "name": "WorksWithUserDefinedKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGet.cpp",
+          "line": 58
+        },
+        {
+          "name": "DifferentObjectsWithSameLogicalKeyRetrieveValue",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGet.cpp",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "name": "HashMapGetSizeTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "EmptyHashMapHasSizeZero",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetSize.cpp",
+          "line": 5
+        },
+        {
+          "name": "SizeIncreasesAfterInsertions",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetSize.cpp",
+          "line": 12
+        },
+        {
+          "name": "UpdatingExistingKeyDoesNotChangeSize",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetSize.cpp",
+          "line": 26
+        },
+        {
+          "name": "SizeBecomesZeroAfterClear",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetSize.cpp",
+          "line": 40
+        },
+        {
+          "name": "WorksWithGenericKeyAndValueTypes",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetSize.cpp",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "name": "HashMapExistsTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "ReturnsFalseForEmptyHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapExists.cpp",
+          "line": 5
+        },
+        {
+          "name": "ReturnsTrueForInsertedKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapExists.cpp",
+          "line": 14
+        },
+        {
+          "name": "ReturnsFalseForMissingKey",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapExists.cpp",
+          "line": 26
+        },
+        {
+          "name": "ReturnsFalseAfterRemoval",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapExists.cpp",
+          "line": 40
+        },
+        {
+          "name": "WorksWithUserDefinedKeyType",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapExists.cpp",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "name": "HashMapGetLoadFactorTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "EmptyHashMapHasZeroLoadFactor",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetLoadFactor.cpp",
+          "line": 4
+        },
+        {
+          "name": "LoadFactorAfterSingleInsertion",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetLoadFactor.cpp",
+          "line": 11
+        },
+        {
+          "name": "LoadFactorAfterMultipleInsertions",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetLoadFactor.cpp",
+          "line": 23
+        },
+        {
+          "name": "DuplicateKeyDoesNotChangeLoadFactor",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetLoadFactor.cpp",
+          "line": 37
+        },
+        {
+          "name": "LoadFactorBecomesZeroAfterClear",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapGetLoadFactor.cpp",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "name": "HashMapPrintBucketsTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "PrintEmptyHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapPrintBuckets.cpp",
+          "line": 8
+        },
+        {
+          "name": "PrintAfterSingleInsertion",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapPrintBuckets.cpp",
+          "line": 31
+        },
+        {
+          "name": "PrintAfterMultipleInsertions",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapPrintBuckets.cpp",
+          "line": 51
+        },
+        {
+          "name": "PrintAfterClear",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapPrintBuckets.cpp",
+          "line": 73
+        },
+        {
+          "name": "SupportsStringKeyType",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapPrintBuckets.cpp",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "name": "HashMapClearTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "ClearEmptyHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapClear.cpp",
+          "line": 4
+        },
+        {
+          "name": "ClearPopulatedHashMap",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapClear.cpp",
+          "line": 14
+        },
+        {
+          "name": "HashMapCanBeReusedAfterClear",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapClear.cpp",
+          "line": 34
+        },
+        {
+          "name": "ClearWorksForUserDefinedKeyType",
+          "file": "\/mnt\/c\/Users\/suman\/Desktop\/DS_Library\/testing\/HashMapTesting\/HashMapClear.cpp",
+          "line": 72
+        }
+      ]
+    }
+  ]
+}

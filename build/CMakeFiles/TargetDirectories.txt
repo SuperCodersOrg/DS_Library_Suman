@@ -1,6 +1,8 @@
 /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles/main.dir
 /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles/DynamicArrayTesting.dir
 /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles/LinkedListTesting.dir
+/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles/HashMapTesting.dir
+/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles/RedisLiteTesting.dir
 /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles/test.dir
 /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles/rebuild_cache.dir

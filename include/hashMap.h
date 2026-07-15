@@ -4,21 +4,7 @@
 #include "dynamicArray.h"
 #include "linkedList.h"
 #include "HashFunction.h"
-#include <type_traits>
-#include <utility>
-
-template<typename, typename = void>
-    struct HasEqual : std::false_type {};
-
-    template<typename T>
-    struct HasEqual<
-        T,
-        std::void_t<
-            decltype(std::declval<const T&>() == std::declval<const T&>())
-        >
-    > : std::is_convertible<
-            decltype(std::declval<const T&>() == std::declval<const T&>()),
-            bool> {};
+#include<concepts>
 
 template<typename K, typename V>
 class HashNode{
@@ -44,10 +30,9 @@ private:
     float loadfactor;
     float threshold;
     HashFunction h;
-    static_assert(
-        HasEqual<K>::value,
-        "Key type must overload operator=="
-    );
+    static_assert(requires(const K& a, const K& b){
+        { a == b } -> std::convertible_to<bool>;
+    },"Key type must overload operator==");
 
 public:
     HashMap();
