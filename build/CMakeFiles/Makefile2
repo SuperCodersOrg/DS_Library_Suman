@@ -88,6 +88,11 @@ clean: CMakeFiles/DynamicArrayTesting.dir/clean
 clean: CMakeFiles/LinkedListTesting.dir/clean
 clean: CMakeFiles/HashMapTesting.dir/clean
 clean: CMakeFiles/RedisLiteTesting.dir/clean
+clean: CMakeFiles/memcheck.dir/clean
+clean: CMakeFiles/memcheck_dynamicarray.dir/clean
+clean: CMakeFiles/memcheck_linkedlist.dir/clean
+clean: CMakeFiles/memcheck_hashmap.dir/clean
+clean: CMakeFiles/memcheck_redislite.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -249,6 +254,166 @@ CMakeFiles/RedisLiteTesting.dir/codegen:
 CMakeFiles/RedisLiteTesting.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/clean
 .PHONY : CMakeFiles/RedisLiteTesting.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/memcheck.dir
+
+# All Build rule for target.
+CMakeFiles/memcheck.dir/all: CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num=57 "Built target memcheck"
+.PHONY : CMakeFiles/memcheck.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/memcheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/memcheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 0
+.PHONY : CMakeFiles/memcheck.dir/rule
+
+# Convenience name for target.
+memcheck: CMakeFiles/memcheck.dir/rule
+.PHONY : memcheck
+
+# codegen rule for target.
+CMakeFiles/memcheck.dir/codegen: CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num=57 "Finished codegen for target memcheck"
+.PHONY : CMakeFiles/memcheck.dir/codegen
+
+# clean rule for target.
+CMakeFiles/memcheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/clean
+.PHONY : CMakeFiles/memcheck.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/memcheck_dynamicarray.dir
+
+# All Build rule for target.
+CMakeFiles/memcheck_dynamicarray.dir/all: CMakeFiles/DynamicArrayTesting.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_dynamicarray.dir/build.make CMakeFiles/memcheck_dynamicarray.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_dynamicarray.dir/build.make CMakeFiles/memcheck_dynamicarray.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num= "Built target memcheck_dynamicarray"
+.PHONY : CMakeFiles/memcheck_dynamicarray.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/memcheck_dynamicarray.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/memcheck_dynamicarray.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 0
+.PHONY : CMakeFiles/memcheck_dynamicarray.dir/rule
+
+# Convenience name for target.
+memcheck_dynamicarray: CMakeFiles/memcheck_dynamicarray.dir/rule
+.PHONY : memcheck_dynamicarray
+
+# codegen rule for target.
+CMakeFiles/memcheck_dynamicarray.dir/codegen: CMakeFiles/DynamicArrayTesting.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_dynamicarray.dir/build.make CMakeFiles/memcheck_dynamicarray.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num= "Finished codegen for target memcheck_dynamicarray"
+.PHONY : CMakeFiles/memcheck_dynamicarray.dir/codegen
+
+# clean rule for target.
+CMakeFiles/memcheck_dynamicarray.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_dynamicarray.dir/build.make CMakeFiles/memcheck_dynamicarray.dir/clean
+.PHONY : CMakeFiles/memcheck_dynamicarray.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/memcheck_linkedlist.dir
+
+# All Build rule for target.
+CMakeFiles/memcheck_linkedlist.dir/all: CMakeFiles/LinkedListTesting.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_linkedlist.dir/build.make CMakeFiles/memcheck_linkedlist.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_linkedlist.dir/build.make CMakeFiles/memcheck_linkedlist.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num= "Built target memcheck_linkedlist"
+.PHONY : CMakeFiles/memcheck_linkedlist.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/memcheck_linkedlist.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/memcheck_linkedlist.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 0
+.PHONY : CMakeFiles/memcheck_linkedlist.dir/rule
+
+# Convenience name for target.
+memcheck_linkedlist: CMakeFiles/memcheck_linkedlist.dir/rule
+.PHONY : memcheck_linkedlist
+
+# codegen rule for target.
+CMakeFiles/memcheck_linkedlist.dir/codegen: CMakeFiles/LinkedListTesting.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_linkedlist.dir/build.make CMakeFiles/memcheck_linkedlist.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num= "Finished codegen for target memcheck_linkedlist"
+.PHONY : CMakeFiles/memcheck_linkedlist.dir/codegen
+
+# clean rule for target.
+CMakeFiles/memcheck_linkedlist.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_linkedlist.dir/build.make CMakeFiles/memcheck_linkedlist.dir/clean
+.PHONY : CMakeFiles/memcheck_linkedlist.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/memcheck_hashmap.dir
+
+# All Build rule for target.
+CMakeFiles/memcheck_hashmap.dir/all: CMakeFiles/HashMapTesting.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_hashmap.dir/build.make CMakeFiles/memcheck_hashmap.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_hashmap.dir/build.make CMakeFiles/memcheck_hashmap.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num= "Built target memcheck_hashmap"
+.PHONY : CMakeFiles/memcheck_hashmap.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/memcheck_hashmap.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/memcheck_hashmap.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 0
+.PHONY : CMakeFiles/memcheck_hashmap.dir/rule
+
+# Convenience name for target.
+memcheck_hashmap: CMakeFiles/memcheck_hashmap.dir/rule
+.PHONY : memcheck_hashmap
+
+# codegen rule for target.
+CMakeFiles/memcheck_hashmap.dir/codegen: CMakeFiles/HashMapTesting.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_hashmap.dir/build.make CMakeFiles/memcheck_hashmap.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num= "Finished codegen for target memcheck_hashmap"
+.PHONY : CMakeFiles/memcheck_hashmap.dir/codegen
+
+# clean rule for target.
+CMakeFiles/memcheck_hashmap.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_hashmap.dir/build.make CMakeFiles/memcheck_hashmap.dir/clean
+.PHONY : CMakeFiles/memcheck_hashmap.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/memcheck_redislite.dir
+
+# All Build rule for target.
+CMakeFiles/memcheck_redislite.dir/all: CMakeFiles/RedisLiteTesting.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_redislite.dir/build.make CMakeFiles/memcheck_redislite.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_redislite.dir/build.make CMakeFiles/memcheck_redislite.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num= "Built target memcheck_redislite"
+.PHONY : CMakeFiles/memcheck_redislite.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/memcheck_redislite.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/memcheck_redislite.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles 0
+.PHONY : CMakeFiles/memcheck_redislite.dir/rule
+
+# Convenience name for target.
+memcheck_redislite: CMakeFiles/memcheck_redislite.dir/rule
+.PHONY : memcheck_redislite
+
+# codegen rule for target.
+CMakeFiles/memcheck_redislite.dir/codegen: CMakeFiles/RedisLiteTesting.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_redislite.dir/build.make CMakeFiles/memcheck_redislite.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/suman/Desktop/DS_Library/build/CMakeFiles --progress-num= "Finished codegen for target memcheck_redislite"
+.PHONY : CMakeFiles/memcheck_redislite.dir/codegen
+
+# clean rule for target.
+CMakeFiles/memcheck_redislite.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_redislite.dir/build.make CMakeFiles/memcheck_redislite.dir/clean
+.PHONY : CMakeFiles/memcheck_redislite.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

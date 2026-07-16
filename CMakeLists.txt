@@ -2,23 +2,52 @@ cmake_minimum_required(VERSION 3.16)
 
 project(DS_Library)
 
+# ----------------------------
+# C++ Settings
+# ----------------------------
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+
+# ----------------------------
+# Debug Build
+# ----------------------------
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
+
+set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
+
+add_compile_options(
+    -Wall
+    -Wextra
+    -Wpedantic
+)
+
 include_directories(include)
 include_directories(src)
+
+# ----------------------------
+# Main Executable
+# ----------------------------
 add_executable(main
     main.cpp
     src/hashFunction.cpp
 )
 
-# Google Test Setup
-
+# ----------------------------
+# Google Test
+# ----------------------------
 enable_testing()
 
 find_package(GTest REQUIRED)
 
+# Find Valgrind
+find_program(VALGRIND_EXECUTABLE valgrind)
 
+# ----------------------------
+# DynamicArray Tests
+# ----------------------------
 add_executable(DynamicArrayTesting
 
     testing/DynamicArrayTesting/DynamicArrayInsert.cpp
@@ -38,15 +67,16 @@ add_executable(DynamicArrayTesting
     testing/DynamicArrayTesting/DynamicArrayPrint.cpp
 )
 
-
 target_link_libraries(DynamicArrayTesting
-
     GTest::gtest
     GTest::gtest_main
-
 )
 
+# ----------------------------
+# LinkedList Tests
+# ----------------------------
 add_executable(LinkedListTesting
+
     testing/LinkedListTesting/LinkedListPushFront.cpp
     testing/LinkedListTesting/LinkedListPushBack.cpp
     testing/LinkedListTesting/LinkedListConstructor.cpp
@@ -66,12 +96,15 @@ add_executable(LinkedListTesting
 )
 
 target_link_libraries(LinkedListTesting
-
     GTest::gtest
     GTest::gtest_main
 )
 
+# ----------------------------
+# HashMap Tests
+# ----------------------------
 add_executable(HashMapTesting
+
     testing/HashMapTesting/HashMapConstructor.cpp
     testing/HashMapTesting/HashMapDestructor.cpp
     testing/HashMapTesting/HashMapCopyConstructor.cpp
@@ -90,23 +123,24 @@ add_executable(HashMapTesting
 )
 
 target_link_libraries(HashMapTesting
-
     GTest::gtest
     GTest::gtest_main
 )
 
+# ----------------------------
+# RedisLite Tests
+# ----------------------------
 add_executable(RedisLiteTesting
+
     testing/RedisLiteTesting/RedisLiteCLI.cpp
     src/redisLite.cpp
     src/hashFunction.cpp
 )
 
 target_link_libraries(RedisLiteTesting
-
     GTest::gtest
     GTest::gtest_main
 )
-
 
 include(GoogleTest)
 
@@ -114,3 +148,58 @@ gtest_discover_tests(DynamicArrayTesting)
 gtest_discover_tests(LinkedListTesting)
 gtest_discover_tests(HashMapTesting)
 gtest_discover_tests(RedisLiteTesting)
+
+# ==========================================================
+#                 VALGRIND TARGETS
+# ==========================================================
+
+if(VALGRIND_EXECUTABLE)
+
+    add_custom_target(memcheck
+        COMMAND ${VALGRIND_EXECUTABLE}
+            --leak-check=full
+            --show-leak-kinds=all
+            --track-origins=yes
+            --error-exitcode=1
+            $<TARGET_FILE:main>
+        DEPENDS main
+        COMMENT "Running Valgrind on main"
+    )
+
+    add_custom_target(memcheck_dynamicarray
+        COMMAND ${VALGRIND_EXECUTABLE}
+            --leak-check=full
+            --show-leak-kinds=all
+            --track-origins=yes
+            $<TARGET_FILE:DynamicArrayTesting>
+        DEPENDS DynamicArrayTesting
+    )
+
+    add_custom_target(memcheck_linkedlist
+        COMMAND ${VALGRIND_EXECUTABLE}
+            --leak-check=full
+            --show-leak-kinds=all
+            --track-origins=yes
+            $<TARGET_FILE:LinkedListTesting>
+        DEPENDS LinkedListTesting
+    )
+
+    add_custom_target(memcheck_hashmap
+        COMMAND ${VALGRIND_EXECUTABLE}
+            --leak-check=full
+            --show-leak-kinds=all
+            --track-origins=yes
+            $<TARGET_FILE:HashMapTesting>
+        DEPENDS HashMapTesting
+    )
+
+    add_custom_target(memcheck_redislite
+        COMMAND ${VALGRIND_EXECUTABLE}
+            --leak-check=full
+            --show-leak-kinds=all
+            --track-origins=yes
+            $<TARGET_FILE:RedisLiteTesting>
+        DEPENDS RedisLiteTesting
+    )
+
+endif()

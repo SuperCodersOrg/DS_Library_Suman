@@ -191,6 +191,71 @@ RedisLiteTesting/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedisLiteTesting.dir/build.make CMakeFiles/RedisLiteTesting.dir/build
 .PHONY : RedisLiteTesting/fast
 
+#=============================================================================
+# Target rules for targets named memcheck
+
+# Build rule for target.
+memcheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memcheck
+.PHONY : memcheck
+
+# fast build rule for target.
+memcheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/build
+.PHONY : memcheck/fast
+
+#=============================================================================
+# Target rules for targets named memcheck_dynamicarray
+
+# Build rule for target.
+memcheck_dynamicarray: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memcheck_dynamicarray
+.PHONY : memcheck_dynamicarray
+
+# fast build rule for target.
+memcheck_dynamicarray/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_dynamicarray.dir/build.make CMakeFiles/memcheck_dynamicarray.dir/build
+.PHONY : memcheck_dynamicarray/fast
+
+#=============================================================================
+# Target rules for targets named memcheck_linkedlist
+
+# Build rule for target.
+memcheck_linkedlist: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memcheck_linkedlist
+.PHONY : memcheck_linkedlist
+
+# fast build rule for target.
+memcheck_linkedlist/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_linkedlist.dir/build.make CMakeFiles/memcheck_linkedlist.dir/build
+.PHONY : memcheck_linkedlist/fast
+
+#=============================================================================
+# Target rules for targets named memcheck_hashmap
+
+# Build rule for target.
+memcheck_hashmap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memcheck_hashmap
+.PHONY : memcheck_hashmap
+
+# fast build rule for target.
+memcheck_hashmap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_hashmap.dir/build.make CMakeFiles/memcheck_hashmap.dir/build
+.PHONY : memcheck_hashmap/fast
+
+#=============================================================================
+# Target rules for targets named memcheck_redislite
+
+# Build rule for target.
+memcheck_redislite: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memcheck_redislite
+.PHONY : memcheck_redislite
+
+# fast build rule for target.
+memcheck_redislite/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck_redislite.dir/build.make CMakeFiles/memcheck_redislite.dir/build
+.PHONY : memcheck_redislite/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -1382,6 +1447,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... memcheck"
+	@echo "... memcheck_dynamicarray"
+	@echo "... memcheck_hashmap"
+	@echo "... memcheck_linkedlist"
+	@echo "... memcheck_redislite"
 	@echo "... DynamicArrayTesting"
 	@echo "... HashMapTesting"
 	@echo "... LinkedListTesting"
